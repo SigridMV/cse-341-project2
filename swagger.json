@@ -1,13 +1,14 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Movie Api",
+    "title": "Movies Api",
     "description": "Movies API",
     "version": "1.0.0"
   },
-  "host": "project2-n8yk.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
+    "http",
     "https"
   ],
   "paths": {
@@ -17,6 +18,16 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
           }
         }
       }
@@ -57,7 +68,7 @@
                 "rating": {
                   "example": "any"
                 },
-                "actor": {
+                "actors": {
                   "example": "any"
                 },
                 "plot": {
@@ -127,7 +138,7 @@
                 "rating": {
                   "example": "any"
                 },
-                "actor": {
+                "actors": {
                   "example": "any"
                 },
                 "plot": {

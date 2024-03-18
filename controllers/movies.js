@@ -12,6 +12,7 @@ const getAll = async (req, res) => {
   result.toArray().then((movies) => {
     res.setHeader("Content-Type", "application/json");
     res.status(200).json(movies);
+    
   });
 };
 
