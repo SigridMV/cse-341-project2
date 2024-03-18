@@ -6,13 +6,13 @@ GET https://project2-n8yk.onrender.com
 GET https://project2-n8yk.onrender.com/movies
 
 ### Get contact by id , 1
-GET https://project2-n8yk.onrender.com/movies/65f8b66ea1f8cb4909bf4a0d
+GET https://project2-n8yk.onrender.com/movies/65f8c770a1f8cb4909bf4a14
 
 ### Get contact by id,  2
-GET https://project2-n8yk.onrender.com/movies/65f8b66ea1f8cb4909bf4a0e
+GET https://project2-n8yk.onrender.com/movies/65f8c770a1f8cb4909bf4a15
 
 ### Get contact by id , 3
-GET https://project2-n8yk.onrender.com/movies/65f8b66ea1f8cb4909bf4a0f
+GET https://project2-n8yk.onrender.com/movies/65f8c770a1f8cb4909bf4a16
 
 ### Create contact
 POST https://project2-n8yk.onrender.com/movies/ HTTP/1.1
@@ -22,24 +22,24 @@ Content-Type: application/json
     "title": "Inception",
     "director": "Christopher Nolan",
     "year": 2010,
-    "genre": ["Action", "Adventure", "Sci-Fi"],
+    "genre": "Action",
     "rating": 8.8,
-    "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"],
+    "actors": "Leonardo DiCaprio",
     "plot": "A thief who enters the dreams of others to steal secrets from their subconscious."
 
 }
 
 ### PUT contact
-PUT https://project2-n8yk.onrender.com/movies/65f8b66ea1f8cb4909bf4a0f HTTP/1.1
+PUT https://project2-n8yk.onrender.com/movies/65f8c770a1f8cb4909bf4a16 HTTP/1.1
 Content-Type: application/json
 
 {
 "title": "Schindler's List",
     "director": "Steven Spielberg",
     "year": 1993,
-    "genre": ["Biography", "Drama", "History"],
+    "genre": "Drama",
     "rating": 8.9,
-    "actors": ["Liam Neeson", "Ben Kingsley", "Ralph Fiennes"],
+    "actors": "Liam Neeson",
     "plot": "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazi Germans."
 }
 
