@@ -21,7 +21,7 @@
         }
       }
     },
-    "/users/": {
+    "/movies/": {
       "get": {
         "description": "",
         "produces": [
@@ -42,19 +42,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "title": {
                   "example": "any"
                 },
-                "lastName": {
+                "director": {
                   "example": "any"
                 },
-                "email": {
+                "year": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "genre": {
                   "example": "any"
                 },
-                "birthday": {
+                "rating": {
+                  "example": "any"
+                },
+                "actors": {
+                  "example": "any"
+                },
+                "plot": {
                   "example": "any"
                 }
               }
@@ -71,7 +77,7 @@
         }
       }
     },
-    "/users/{id}": {
+    "/movies/{id}": {
       "get": {
         "description": "",
         "produces": [
@@ -106,19 +112,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "title": {
                   "example": "any"
                 },
-                "lastName": {
+                "director": {
                   "example": "any"
                 },
-                "email": {
+                "year": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "genre": {
                   "example": "any"
                 },
-                "birthday": {
+                "rating": {
+                  "example": "any"
+                },
+                "actors": {
+                  "example": "any"
+                },
+                "plot": {
                   "example": "any"
                 }
               }
