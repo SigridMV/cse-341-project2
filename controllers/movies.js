@@ -37,7 +37,7 @@ const createMovie = async (req, res) => {
     year: req.body.year,
     genre: req.body.genre,
     rating: req.body.rating,
-    actors: req.body.actors,
+    actor: req.body.actors,
     plot: req.body.plot,
   };
   const response = await mongodb
@@ -63,7 +63,7 @@ const updateMovie = async (req, res) => {
     year: req.body.year,
     genre: req.body.genre,
     rating: req.body.rating,
-    actors: req.body.actors,
+    actor: req.body.actors,
     plot: req.body.plot,
   };
   const response = await mongodb

@@ -57,7 +57,7 @@
                 "rating": {
                   "example": "any"
                 },
-                "actors": {
+                "actor": {
                   "example": "any"
                 },
                 "plot": {
@@ -127,7 +127,7 @@
                 "rating": {
                   "example": "any"
                 },
-                "actors": {
+                "actor": {
                   "example": "any"
                 },
                 "plot": {
