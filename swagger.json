@@ -5,11 +5,11 @@
     "description": "Movies API",
     "version": "1.0.0"
   },
-  "host": "https://project2-ybyn.onrender.com",
+  "host": "project2-ybyn.onrender.com",
   "basePath": "/",
   "schemes": [
-    "https",
-    "http"
+    "http",
+    "https"
   ],
   "paths": {
     "/": {
