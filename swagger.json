@@ -8,8 +8,8 @@
   "host": "project2-ybyn.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
-    "https"
+    "https",
+    "http"
   ],
   "paths": {
     "/": {
