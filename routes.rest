@@ -1,40 +1,40 @@
 //.rest File with Routes
 
-GET https://project2-n8yk.onrender.com
+GET https://project2-ybyn.onrender.com
 
 ### Get all contacts
-GET https://project2-n8yk.onrender.com/movies
+GET https://project2-ybyn.onrender.com/movies
 
 ### Get contact by id , 1
-GET https://project2-n8yk.onrender.com/movies/65f8c770a1f8cb4909bf4a14
+GET https://project2-ybyn.onrender.com/movies/65f8c770a1f8cb4909bf4a14
 
 ### Get contact by id,  2
-GET https://project2-n8yk.onrender.com/movies/65f8c770a1f8cb4909bf4a15
+GET https://project2-ybyn.onrender.com/movies/65f8c770a1f8cb4909bf4a15
 
 ### Get contact by id , 3
-GET https://project2-n8yk.onrender.com/movies/65f8c770a1f8cb4909bf4a16
+GET https://project2-ybyn.onrender.com/movies/65f8c770a1f8cb4909bf4a16
 
 ### Create contact
-POST https://project2-n8yk.onrender.com/movies/ HTTP/1.1
+POST https://project2-ybyn.onrender.com/movies/ HTTP/1.1
 Content-Type: application/json
 
 {
-    "title": "Inception",
+    "title": "The Dark Knight",
     "director": "Christopher Nolan",
-    "year": 2010,
+    "year": 2008,
     "genre": "Action",
-    "rating": 8.8,
-    "actors": "Leonardo DiCaprio",
-    "plot": "A thief who enters the dreams of others to steal secrets from their subconscious."
+    "rating": 9,
+    "actors": "Christian Bale",
+    "plot": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham."
 
 }
 
 ### PUT contact
-PUT https://project2-n8yk.onrender.com/movies/65f8c770a1f8cb4909bf4a16 HTTP/1.1
+PUT https://project2-ybyn.onrender.com/movies/65f8c770a1f8cb4909bf4a16 HTTP/1.1
 Content-Type: application/json
 
 {
-"title": "Schindler's List",
+    "title": "Schindler's List",
     "director": "Steven Spielberg",
     "year": 1993,
     "genre": "Drama",
@@ -44,4 +44,4 @@ Content-Type: application/json
 }
 
 ### Delete user
-DELETE https://project2-n8yk.onrender.com/movies/65f8b66ea1f8cb4909bf4a0d HTTP/1.1
+DELETE https://project2-ybyn.onrender.com/movies/65f8c770a1f8cb4909bf4a16 HTTP/1.1
