@@ -5,7 +5,7 @@ router.use('/', require('./swagger'));
 
 router.get('/', (req, res) => { 
     //#swagger.tag=['Hello World']
-    res.send('Hello World');
+    res.send('WELCOME TO CSE-341 / Sigrid Müller');
 });
 
 router.use('/movies', require('./movies'));
