@@ -25,7 +25,8 @@
     "mongodb": "^6.5.0",
     "mongodb-connection-string-url": "^3.0.0",
     "monodb": "^1.5.1",
-    "swagger-ui-express": "^5.0.0"
+    "swagger-ui-express": "^5.0.0",
+    "validatorjs": "^3.22.1"
   },
   "devDependencies": {
     "swagger-autogen": "^2.23.7"
