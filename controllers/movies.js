@@ -4,21 +4,21 @@ const ObjectId = require("mongodb").ObjectId;
 
 const getAll = async (req, res) => {
   //#swagger.tag=['Movies']
-  const result = await mongodb
+  mongodb
     .getDatabase()
     .db("project2")
     .collection("movies")
     .find()
-    .toArray((err, movies) => {
+    .toArray((err, result) => {
       if(err){
         res.status(400).json({message: err});
       }
     res.setHeader("Content-Type", "application/json");
-    res.status(200).json(movies);
+    res.status(200).json(result);
   }); 
 };
 
-const getSingle = (req, res) => {
+const getSingle = async (req, res) => {
   //#swagger.tag=['Movies']
   if(!ObjectId.isValid(req.params.id)){
     res.status(400).json('Must use a valid movie id to find a movie.');
