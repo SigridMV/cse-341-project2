@@ -8,12 +8,14 @@ const getAll = async (req, res) => {
     .getDatabase()
     .db("project2")
     .collection("movies")
-    .find();
-  result.toArray().then((movies) => {
+    .find()
+    .toArray((err, movies) => {
+      if(err){
+        res.status(400).json({message: err});
+      }
     res.setHeader("Content-Type", "application/json");
     res.status(200).json(movies);
-    
-  });
+  }); 
 };
 
 const getSingle = async (req, res) => {
@@ -23,11 +25,14 @@ const getSingle = async (req, res) => {
     .getDatabase()
     .db("project2")
     .collection("movies")
-    .find({ _id: movieId });
-  result.toArray().then((movies) => {
+    .find({ _id: movieId })
+    .toArray ((err, movies) => {
+      if(err){
+        res.status(400).json({message: err});
+      }
     res.setHeader("Content-Type", "application/json");
-    res.status(200).json(movies);
-  });
+    res.status(200).json(movies[0]);
+    });
 };
 
 const createMovie = async (req, res) => {
