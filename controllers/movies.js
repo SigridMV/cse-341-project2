@@ -2,23 +2,23 @@
 const mongodb = require("../data/database");
 const ObjectId = require("mongodb").ObjectId;
 
-const getAll = async (req, res) => {
+const getAll = (req, res) => {
   //#swagger.tag=['Movies']
   mongodb
     .getDatabase()
     .db("project2")
     .collection("movies")
     .find()
-    .toArray((err, result) => {
+    .toArray((err, lists) => {
       if(err){
         res.status(400).json({message: err});
       }
     res.setHeader("Content-Type", "application/json");
-    res.status(200).json(result);
+    res.status(200).json(lists);
   }); 
 };
 
-const getSingle = async (req, res) => {
+const getSingle = (req, res) => {
   //#swagger.tag=['Movies']
   if(!ObjectId.isValid(req.params.id)){
     res.status(400).json('Must use a valid movie id to find a movie.');
@@ -29,12 +29,12 @@ const getSingle = async (req, res) => {
     .db("project2")
     .collection("movies")
     .find({ _id: movieId })
-    .toArray ((err, movies) => {
+    .toArray ((err, result) => {
       if(err){
         res.status(400).json({message: err});
       }
     res.setHeader("Content-Type", "application/json");
-    res.status(200).json(movies[0]);
+    res.status(200).json(result[0]);
     });
 };
 
@@ -55,7 +55,7 @@ const createMovie = async (req, res) => {
     .collection("movies")
     .insertOne(movie);
   if (response.acknowledge) {
-    res.status(204).send();
+    res.status(201).send(response);
   } else {
     res
       .status(500)
